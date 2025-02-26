@@ -60,7 +60,10 @@ print ("Média final:", media)
 
 """Para formatar a média em duas casas decimais"""
 
+<<<<<<< HEAD
 print(f"Média final: {media:.2f}")
+=======
+>>>>>>> 588cb77 (Atividades de 7 a 10)
 
 #Prática 2
 
