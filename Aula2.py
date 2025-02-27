@@ -96,16 +96,13 @@ preco_dobrado *= 2
 print(f"Preço original: R$ {preco_original:.2f}")
 print(f"Dobrando o valor: R$ {preco_dobrado:.2f}")"""
 
-"""Atividade 07:
-Verificação de Caracteres em uma String:
-Crie um programa que peça ao usuário uma frase e um caractere.
-Use o operador de associação in para verificar se o caractere está
-<<<<<<< HEAD
-presente na frase."""
+#Atividade 7:
+#Verificação de Caracteres em uma String:
+#Crie um programa que peça ao usuário uma frase e um caractere.
+#Use o operador de associação in para verificar se o caractere está
+#presente na frase.
 
-=======
-presente na frase.
-
+"""
 frase = input("Digite uma frase: ")
 print (f"A frase digitada foi: {frase}")
 
@@ -119,15 +116,13 @@ resposta = "Sim" if letra.lower() in frase.lower() else "Não"
 
 # Exibir o resultado
 print(f"O caractere '{letra}' está na frase? {resposta}") """
->>>>>>> 588cb77 (Atividades de 7 a 10)
-"""Atividade 08:
-Verificação de Palavras em uma Frase:
-Peça ao usuário para inserir uma frase e uma palavra.
-<<<<<<< HEAD
-Use in para verificar se a palavra está na frase."""
-=======
-Use in para verificar se a palavra está na frase.
 
+"""Atividade 8: 
+Verificação de Palavras em uma Frase: 
+Peça ao usuário para inserir uma frase e uma palavra. 
+Use in para verificar se a palavra1 está na frase. """
+
+"""
 frase1 = input("Digite uma frase: ")
 print (f"A frase digitada foi: {frase1}")
 
@@ -155,11 +150,103 @@ Verificar Nota para Aprovado:
 
 Crie um programa que peça a nota de um aluno e use if para verificar se ele foi aprovado (nota >=6)"""
 
+"""
 nota = float(input("Digite sua nota: "))
 
 if nota >= 6:
     print("Aluno Aprovado")
 else:
     print("Aluno Reprovado")
->>>>>>> 588cb77 (Atividades de 7 a 10)
 
+
+"""
+
+"""
+Atividade 11: 
+Verificar Par ou Impar e Positivo e Negativo:
+Escreva um programa que peça um  número e use if para verificar se ele é par ou ímpar 
+e também se é positivo ou negativo.
+"""
+"""
+numero1 = int(input("Digite um número: "))
+
+# Verifica se o número é par ou ímpar
+if numero1 % 2 == 0:  # se o resto da divisão por 2 for igual a zero
+    print(f"O número {numero1} é Par.")
+else:
+    print(f"O número {numero1} é Ímpar.")
+    
+if numero1 > 0:  # se o resto da divisão por 2 for igual a zero
+    print(f"O número {numero1} é Positivo.")
+
+elif numero1 < 0:
+    print(f"O número {numero1} é Negativo.")
+    
+else:
+    print(f"O número {numero1} é Zero.")
+    
+"""
+
+""" Atividade 12 
+
+Verificar Classificação de IMC
+Crie um programa que calcule o Índece de Massa Corporal (IMC)
+e use if para classificar o resultado em "Abaixo do peso","Peso normal" "Sobrepeso" e "Obesidade"
+
+Faixas de IMC 
+Abaixo de 18,5: Abaixo do peso
+Entre 18,5 e 24,9: Peso normal
+Entre 25 e 29,9: Sobrepeso
+Entre 30 e 34,9: Obesidade
+
+"""
+"""
+peso = int(input("Informe seu peso: "))
+altura = float(input("Informe sua altura: "))
+imc = peso / (altura * altura)
+
+if imc < 18.50:  
+    print(f"O seu IMC é {imc:.2f}, de acordo com a OMS você está com BAIXO PESO.")
+
+elif  18.50 <= imc <=24.9:  
+    print(f"O seu IMC é {imc:.2f}, de acordo com a OMS você está com PESO NORMAL.")
+
+elif 25 <= imc < 30: 
+    print(f"O seu IMC é {imc:.2f}, de acordo com a OMS você está com SOBREPESO.")
+   
+else:
+    print(f"O seu IMC é {imc:.2f}, de acordo com a OMS você está com OBESIDADE.")
+
+"""
+"""
+Atividade 13:
+Desenvolva um programa que peça ao usuário um nome de usuário e uma senha e use if
+para verificar se são iguais a "admin" e "1234", respectivamente
+"""
+"""
+login = str(input("Login: "))
+senha = int(input("Senha: "))
+
+if login == "admin" and senha == 1234:
+    print("Acesso liberado!")
+else:
+    print("Login ou senha incorretos. Tente novamente.")
+
+"""
+"""
+Atividade 14
+Verificar Status de Taxa de Desconto:
+Crie um programa que peça ao usuário o preço original de um produto e a quantidade comprada.
+Use if para verificar se a quantidade é maior que 10 para aplicar um desconto de 10% sobre o total.
+"""
+
+preco = float(input("Informe o preço: "))
+quantidade = int(input("Informe a quantidade: "))
+valortotal = preco * quantidade
+
+if quantidade > 10:
+   valorcomdesconto = valortotal *0.90
+   print(f"Desconto de 10% sobre o valor total de R${valortotal:.2f}, o preço será de R${valorcomdesconto:.2f}.")
+
+else:
+    print("Quantidade comprada inferior ou igual a 10 não dá direto ao desconto.")

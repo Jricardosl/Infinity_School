@@ -23,13 +23,16 @@
 #Observação: Conhecer e utilizar diferentes tipos de variáveis
 #é fundamental para manipular dados de maneira eficaz.
 
+"""
 nome = input("Meu nome é: ")
 idade = input("Tenho a idade de: ")
 altura = input("e minha altura é de: ")
 
 print(type(nome))
 print(type(idade))
-print(type(altura))
+print(type(altura)) 
+
+"""
 
 #Pratica 1
 
@@ -50,6 +53,7 @@ por quatro para obter a média.
 Use a função print() para exibir a média das notas
 calculada."""
 
+"""
 nota1 = float(input("Informe a nota do primeiro bimestre: "))
 nota2 = float(input("Informe a nota do segundo bimestre: "))
 nota3 = float(input("Informe a nota do terceiro bimestre: "))
@@ -58,12 +62,10 @@ media = ((nota1+nota2+nota3+nota4)/4)
 
 print ("Média final:", media)
 
-"""Para formatar a média em duas casas decimais"""
 
-<<<<<<< HEAD
-print(f"Média final: {media:.2f}")
-=======
->>>>>>> 588cb77 (Atividades de 7 a 10)
+print(f"Média final: {media:.2f}") #Para formatar a média em duas casas decimais
+
+"""
 
 #Prática 2
 
@@ -95,12 +97,15 @@ para o Usuário:
 Use a função print() para exibir o salário por
 hora calculado."""
 
+"""
 salariomensal = float(input("Quanto você ganha por mês: "))
 horasemana = float(input("Número de Horas Trabalhadas na Semana: "))
 horatrabmes = horasemana * 4
 salarioporhora = salariomensal / horatrabmes
 
 print (f"Salário por hora calculado: {salarioporhora:.2f}")
+
+"""
 
 #Prática 3
 
