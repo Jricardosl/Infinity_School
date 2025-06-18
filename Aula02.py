@@ -3,6 +3,7 @@
 # Peça ao usuário duas idades e use operadores de comparação para
 # verificar se a primeira idade é maior, menor ou igual à segunda.
 
+#Opção 1
 # idade1 = int(input("Digite a primeira idade: "))
 # idade2 = int(input("Digite a segunda idade: "))
 
@@ -13,6 +14,14 @@
 # else:
 #     print(f"As duas idades são iguais ({idade1}).")
 
+#Opção 2
+
+# print(f"O primeiro número é maior do que o segundo? {idade1 > idade2}")
+
+# print(f"O primeiro número é menor do que o segundo? {idade1 < idade2}")
+
+# print(f"O primeiro número é igual ao segundo? {idade1 == idade2}")
+
 
 # Atividade 02:
 # Verificar Igualdade de Strings:
@@ -22,6 +31,10 @@
 # palavra1 = input("Digite a primeira palavra: ")
 # palavra2 = input("Digite a segunda palavra: ")
 
+#Opção 1
+# print(f"As duas palavras são iguais? {palavra1 == palavra2}")
+
+#Opção 2
 # if palavra1 == palavra2:
 #     print("As palavras são iguais.")
 # else:

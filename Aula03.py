@@ -214,15 +214,108 @@
 #         break
 #     else:
 #         print ("Errado, tente novamente.")
-    
+
+#Extra:
+#Jogo de adivinhação aleatório    
+# import random
+
+# numero_secreto = random.randint(1, 10)  # número aleatório entre 1 e 10
+# tentativas_restantes = 3  # limite de tentativas
+
+# print("🎯 Jogo de Adivinhação")
+# print("Você tem 3 tentativas para adivinhar o número secreto entre 1 e 10.\n")
+
+# while tentativas_restantes > 0:
+#     try:
+#         palpite = int(input("Digite seu palpite: "))
+#     except ValueError:
+#         print("⛔ Por favor, digite um número válido.")
+#         continue
+
+#     if palpite == numero_secreto:
+#         print("🎉 Parabéns! Você acertou o número secreto!")
+#         break
+#     else:
+#         tentativas_restantes -= 1
+#         if palpite < numero_secreto:
+#             print("🔼 O número secreto é **maior**.")
+#         else:
+#             print("🔽 O número secreto é **menor**.")
+        
+#         if tentativas_restantes > 0:
+#             print(f"❗ Você ainda tem {tentativas_restantes} tentativa(s).\n")
+#         else:
+#             print(f"💥 Fim de jogo! O número secreto era {numero_secreto}.")
+
+
 # Atividade 09:
 # Contagem até 10:
 # Crie um programa que use um laço while para contar de 1 a 10 
 # e termine quando atigir 10.          
 
+# contador = 1 #Inicializa o contador com 1.
+# while contador <=10: #Executa o bloco de código enquanto o valor do contador for menor ou igual a 10.
+#     print(contador) #Mostra o valor atual do contador.
+#     contador +=1 #Incrementa o contador em 1 a cada repetição.
+# print("Fim da contagem!")
+
 
 # Atividade 10:
-# Sona até 50:
+# Soma até 50:
 # Escreva um programa que use um laço while para somar 
 # números consecutivos começando de 1 e termine quando
 # a soma atingir ou ultrapassar 50.
+
+# soma = 0
+# numero = 1
+# while soma < 50: #Assim que soma atingir ou ultrapassar 50, o laço termina.
+#      soma += numero
+#      numero += 1 #Isso faz com que o próximo número a ser somado seja o próximo consecutivo (2, 3, 4...).
+# print("A soma acumulada é:", soma)
+# print("Último número somado foi:", numero - 1)
+
+#Atividade 11:
+#Entrada Válida:
+#Crie um programa que solicite ao usuário um número entre 1 e 10.
+#Continue pedido até o usuário forneça um valor válido.
+
+# numero = int(input("Digite um número entre 1 e 10: "))
+# while numero < 1 or numero > 10: #Enquanto o número não estiver entre 1 e 10, o laço continua. uso do or (ou), indicando duas condições
+#     print("Número inválido! Tente novamente.")
+#     numero = int(input("Digite um número entre 1 e 10: "))
+
+# print("Entrada válida:", numero)
+
+#Atividade 12:
+#Senha correta:
+#Desenvolva um programa que peça ao usuário para digitar uma senha e continue pedindo até que 
+#a senha correta(previamente definida) seja inserida.
+
+# senha = ""
+# senha = input("Digite a senha: ")
+# while senha != "1234":
+#     print("Senha incorreta, tente novamente!")
+#     senha = input("Digite a senha: ")
+# print("Senha correta")
+
+#DESAFIOS PRÁTICOS
+
+#PAGINA 27
+#1-Soma de números pares:
+#Crie um programa que use um laço while para somar todos os números pares de 1 a 100 e exiba o resultado.
+
+# soma = 0
+# numero = 1
+# while numero <= 100:
+#     if numero % 2 == 0:
+#         soma += numero
+#     numero += 1
+# print("A soma dos números pares entre 1 a 100 é:",soma)
+
+#Outra forma
+# soma = 0
+# numero = 2
+# while numero <= 100:
+#     soma += numero
+#     numero += 2
+# print("A soma dos números pares entre 1 a 100 é:", soma)
