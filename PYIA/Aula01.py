@@ -95,26 +95,84 @@
 #4 Exiba na tela a classificação final das equipes, mostrando o nome da equipe e sua média, da equipe com a
 #pontuação mais alta para a mais baixa
 
-# Dados das equipes
-equipe1 = ("Equipe Alpha", [6.5, 7.5, 8.0])
-equipe2 = ("Equipe Ômega", [7.5, 5.6, 9.0])
-equipe3 = ("Equipe Beta", [9.5, 7.0, 7.0])
+# # Dados das equipes
+# equipe1 = ("Equipe Alpha", [6.5, 7.5, 8.0])
+# equipe2 = ("Equipe Ômega", [7.5, 5.6, 9.0])
+# equipe3 = ("Equipe Beta", [9.5, 7.0, 7.0])
 
-# Lista com todas as equipes - Assim, podemos percorrer todas as equipes de uma vez com um for.
-equipes = [equipe1, equipe2, equipe3]
+# # Lista com todas as equipes - Assim, podemos percorrer todas as equipes de uma vez com um for.
+# equipes = [equipe1, equipe2, equipe3]
 
-# 1. Calcular a média das pontuações e armazenar em 'medias'
-medias = []
-for equipe in equipes:
-    nome = equipe[0] # Pega o nome da equipe
-    pontuacoes = equipe[1] # Pega a lista de pontuações
-    media = sum(pontuacoes) / len(pontuacoes) # Soma os pontos e divide pela quantidade
-    medias.append((nome, media))  # Tupla com (nome, média) - # Salva o nome e a média numa nova tupla
+# # 1. Calcular a média das pontuações e armazenar em 'medias'
+# medias = []
+# for equipe in equipes:
+#     nome = equipe[0] # Pega o nome da equipe
+#     pontuacoes = equipe[1] # Pega a lista de pontuações
+#     media = sum(pontuacoes) / len(pontuacoes) # Soma os pontos e divide pela quantidade
+#     medias.append((nome, media))  # Tupla com (nome, média) - # Salva o nome e a média numa nova tupla
 
-# 2 e 3. Ordenar por média em ordem decrescente (classificação)
-classificacao = sorted(medias, key=lambda x: x[1], reverse=True)
+# # 2 e 3. Ordenar por média em ordem decrescente (classificação)
+# classificacao = sorted(medias, key=lambda x: x[1], reverse=True)
 
-# 4. Exibir a classificação final
-print("Classificação Final:")
-for equipe in classificacao:
-    print(f"{equipe[0]} - Média: {equipe[1]:.2f}")
+# # 4. Exibir a classificação final
+# print("Classificação Final:")
+# for equipe in classificacao:
+#     print(f"{equipe[0]} - Média: {equipe[1]:.2f}")
+
+#REVISÃO DA AULA - 29.07.2025
+
+#CADASTRO DE NOTAS DE ALUNOS
+#Faça um programa que solicite 3 notas ao usuário
+#Armazene as notas numa lima
+#Repita esta ação para 3 alunos
+#Itere sobre a lista e calcule a média
+#Mostre a média de cada aluno obtida no terminal
+
+notas_todos_alunos = []
+
+qtde_alunos =3
+
+qtde_notas =3
+
+
+
+for i in range(qtde_alunos):
+
+#Faça um programa que solicite 3 notas ao usuário
+
+    notas_cada_aluno = []
+
+    for j in range(qtde_notas):
+
+        nota = float(input(f"Digite o{j+1}ª nota do{i+1}º aluno: "))
+
+        notas_cada_aluno.append(nota)
+
+#Armazene as notas numa lista
+
+    notas_todos_alunos.append(notas_cada_aluno)
+
+print(notas_todos_alunos)
+
+
+
+#itere sobre a lista e calcule a média
+
+for notas_aluno in notas_todos_alunos:
+
+    soma=0
+
+    for nota in notas_aluno:
+
+        soma += nota
+
+    media = soma / qtde_notas
+
+# Mostre a média de cada alunos obtida
+
+    print(media)
+
+
+
+
+
