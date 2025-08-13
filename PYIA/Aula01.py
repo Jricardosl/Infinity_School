@@ -128,49 +128,49 @@
 #Itere sobre a lista e calcule a média
 #Mostre a média de cada aluno obtida no terminal
 
-notas_todos_alunos = []
+# notas_todos_alunos = []
 
-qtde_alunos =3
+# qtde_alunos =3
 
-qtde_notas =3
-
-
-
-for i in range(qtde_alunos):
-
-#Faça um programa que solicite 3 notas ao usuário
-
-    notas_cada_aluno = []
-
-    for j in range(qtde_notas):
-
-        nota = float(input(f"Digite o{j+1}ª nota do{i+1}º aluno: "))
-
-        notas_cada_aluno.append(nota)
-
-#Armazene as notas numa lista
-
-    notas_todos_alunos.append(notas_cada_aluno)
-
-print(notas_todos_alunos)
+# qtde_notas =3
 
 
 
-#itere sobre a lista e calcule a média
+# for i in range(qtde_alunos):
 
-for notas_aluno in notas_todos_alunos:
+# #Faça um programa que solicite 3 notas ao usuário
 
-    soma=0
+#     notas_cada_aluno = []
 
-    for nota in notas_aluno:
+#     for j in range(qtde_notas):
 
-        soma += nota
+#         nota = float(input(f"Digite o{j+1}ª nota do{i+1}º aluno: "))
 
-    media = soma / qtde_notas
+#         notas_cada_aluno.append(nota)
 
-# Mostre a média de cada alunos obtida
+# #Armazene as notas numa lista
 
-    print(media)
+#     notas_todos_alunos.append(notas_cada_aluno)
+
+# print(notas_todos_alunos)
+
+
+
+# #itere sobre a lista e calcule a média
+
+# for notas_aluno in notas_todos_alunos:
+
+#     soma=0
+
+#     for nota in notas_aluno:
+
+#         soma += nota
+
+#     media = soma / qtde_notas
+
+# # Mostre a média de cada alunos obtida
+
+#     print(media)
 
 
 
